@@ -1,6 +1,6 @@
 *,
-*:after,
-*:before {
+*::after,
+*::before {
 	box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ body {
 	font-family: 'Poppins', serif;
 	font-size: 1em;
 	font-weight: 400;
-	line-heght: 1.5em;
+	line-height: 1.5em;
 	color: #484848;
 	background-color: #fff;
 }
@@ -72,7 +72,7 @@ header {
 	position: relative;
 }
 
-#header_facebook:after {
+#header_facebook::after {
 	font-family: 'icomoon';
 	content: "\f09a";
 	position: absolute;
@@ -83,7 +83,7 @@ header {
 	color: #222;
 }
 
-#header_twiter:after {
+#header_twiter::after {
 	font-family: 'icomoon';
 	content: "\f099";
 	position: absolute;
@@ -94,7 +94,7 @@ header {
 	color: #222;
 }
 
-#header_behance:after {
+#header_behance::after {
 	font-family: 'icomoon';
 	content: "\f1b4";
 	position: absolute;
@@ -105,7 +105,7 @@ header {
 	color: #222;
 }
 
-#header_dribbble:after {
+#header_dribbble::after {
 	font-family: 'icomoon';
 	content: "\f17d";
 	position: absolute;
@@ -116,7 +116,7 @@ header {
 	color: #222;
 }
 
-#header_linkedin:after {
+#header_linkedin::after {
 	font-family: 'icomoon';
 	content: "\f0e1";
 	position: absolute;
@@ -127,7 +127,7 @@ header {
 	color: #222;
 }
 
-#header_youtibe:after {
+#header_youtibe::after {
 	font-family: 'icomoon';
 	content: "\f167";
 	position: absolute;
@@ -238,7 +238,7 @@ header {
 	background-image: linear-gradient(#FEEBAD, #ffcb0f);
 }
 
-.search:after {
+.search::after {
 	font-family: 'icomoon';
 	content: "\f002";
 	position: absolute;
@@ -249,7 +249,7 @@ header {
 	color: #ffcb0f;
 }
 
-.search:hover:after {
+.search:hover::after {
 	color: #222533;
 }
 
@@ -500,4 +500,204 @@ header {
 .service_text {
 	margin-top: 1.4em;
 	line-height: 1.5em;
+}
+
+.our_works {
+	padding: 4.375em 0 6.75em;
+	background-color: #ffcb0f;
+	background-image: url(../../Images/Layer_3.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.our_works-top {
+	max-width: 77%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.our_works-title {
+	font-family: 'Montserrat', serif;
+	font-size: 2em;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.our_works-text {
+	margin-top: 2.5em;
+	color: #fff;
+}
+
+.our_works-content {
+	height: 36em;
+	margin: 3.5em auto 0;
+}
+
+.reviews {
+	padding-top: 4.375em;
+	background-image: url(../../Images/Layer_17.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+.reviews_top {
+	max-width: 77%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.reviews_title {
+	font-family: 'Montserrat', serif;
+	font-size: 2em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.reviews_text {
+	margin-top: 2.5em;
+}
+
+.reviews_content {
+	padding: 3.25em 1em;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.review {
+	max-width: 28%;
+}
+
+.main_review {
+	max-width: 32%;
+}
+
+.review_comment {
+	margin-bottom: 0.8em;
+	padding: 2.75em 1em 3.2em 4.35em;
+	position: relative;
+	border-radius: 1.25em;
+	background-color: #e5e5e5;
+}
+
+.review_comment::after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 0.8em;
+	width: 0.8em;
+	color: #e5e5e5;
+	background-color: #e5e5e5;
+}
+
+.main_review .review_comment {
+
+	margin-bottom: 1em;
+	padding: 2.75em 2em 5em 4.75em;
+	background-color: #ffcb0f;
+}
+
+.main_review .review_comment::after {
+	height: 1em;
+	width: 1em;
+	color: #ffcb0f;
+	background-color: #ffcb0f;
+}
+
+.review_text {
+	position: relative;
+	font-size: 0.9375em;
+	line-height: 1.5em;
+	color: #393939;
+}
+
+.review_text::before {
+	font-family: 'icomoon';
+	content: "\e978";
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-115%, -43%);
+	font-size: 3em;
+	line-height: 1em;
+	color: #989898;
+}
+
+.main_review .review_comment .review_text {
+	font-size: 1em;
+	color: #fff;
+}
+
+.main_review .review_comment .review_text::before {
+	color: #fff;
+}
+
+.review_author {
+	margin: 1em auto 0;
+	display: block;
+}
+
+.author_img {
+	max-height: 5em;
+	max-width: 5em;
+	margin: 0 auto;
+	display: block;
+	border-radius: 50%;
+}
+
+.main_review .review_author {
+	margin-top: 1.5em;
+}
+
+.author_name {
+	margin-top: 0.85em;
+	font-family: 'Montserrat', serif;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.reviews_bottom {
+	margin: 0 2.5%;
+	padding: 3em 0 3.5em;
+	background-color: #ffcb0f;
+}
+
+.reviews_form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_headline {
+	display: block;
+}
+
+.headline_title {
+	font-family: 'Montserrat', serif;
+	font-size: 2em;
+	line-height: 1em;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2f3240;
+}
+
+.headline_subtitle {
+	margin-top: 0.2em;
+	font-size: 2.625em;
+	line-height: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2f3240;
 }

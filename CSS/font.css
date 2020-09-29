@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?q8f9be');
-  src:  url('../fonts/icomoon.eot?q8f9be#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?q8f9be') format('truetype'),
-    url('../fonts/icomoon.woff?q8f9be') format('woff'),
-    url('../fonts/icomoon.svg?q8f9be#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?bbv518');
+  src:  url('../fonts/icomoon.eot?bbv518#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bbv518') format('truetype'),
+    url('../fonts/icomoon.woff?bbv518') format('woff'),
+    url('../fonts/icomoon.svg?bbv518#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -87,4 +87,7 @@
 }
 .icon-envira:before {
   content: "\f299";
+}
+.icon-quotes-right:before {
+  content: "\e978";
 }
