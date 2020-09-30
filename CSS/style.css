@@ -701,3 +701,53 @@ header {
 	text-transform: uppercase;
 	color: #2f3240;
 }
+
+.reviews_form form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.reviews_form input,
+.reviews_form textarea {
+	height: 2.8125em;
+	padding: 0.9em 1.25em;
+	border: none;
+	border-radius: 0.625em;
+	outline: none;
+}
+
+.reviews_form input {
+	max-width: 15.5625em;
+	min-width: 47%;
+	font-size: 1em;
+}
+
+.form_name {
+
+}
+
+.reviews_form textarea {
+	max-width: 24.375em;
+	min-width: 74%;
+	margin-top: 0.8125em;
+	font-size: 1.23em;
+	resize: none;
+}
+
+.reviews_form button {
+	max-height: 2.8125em;
+	width: 20%;
+	margin-top: 0.8125em;
+	border: none;
+	border-radius: 0.625em;
+	font-size: 1em;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #2f3240;
+}
