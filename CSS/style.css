@@ -629,7 +629,8 @@ header {
 }
 
 .slider_inner {
-	margin-top: 20px;
+	margin-top: 3.625em;
+	padding-top: 5.625em;
 	position: relative;
 }
 
@@ -647,7 +648,7 @@ header {
 
 .slick-dots {
 	position: absolute;
-	top: -20px;
+	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
 	display: -webkit-flex;
@@ -658,27 +659,67 @@ header {
 	justify-content: center;
 }
 
-.slick-slide-contro
+ul.slick-dots li {
+	border-radius: 18px;
+	background-color: transparent;
+	transition-duration: 0.2s;
+}
+
+ul.slick-dots li.slick-active {
+	margin: 0 0.75em;
+	background-color: #282828;
+	transition-duration: 0.2s;
+}
+
+button[id^="slick-slide-control"] {
+	padding: 0.625em 1.25em;
+	border: none;
+	border-radius: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+#slick-slide-control00 {
+	content: "Show all";
+}
+
+#slick-slide-control01 {
+	content: "Buildings";
+}
+
+#slick-slide-control02 {
+	content: "Interior Design";
+}
+
+#slick-slide-control03 {
+	content: "Isolation";
+}
+
+#slick-slide-control04 {
+	content: "Plumbing";
+}
 
 .slider_item {
 	height: 30.875em;
-	/*width: 77vw;*/
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	outline: none;
 }
 
 .our_works-left {
-	/*width: 49.75%;*/
-	width: 47em;
+	width: 49.75%;
 }
 
 .our_works-right {
-	/*width: 49.75%;*/
-	width: 47em;
+	width: 49.75%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -900,7 +941,7 @@ header {
 	color: #2f3240;
 }
 
-.reviews_form form {
+.feedback_form {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -910,8 +951,8 @@ header {
 	justify-content: space-between;
 }
 
-.reviews_form input,
-.reviews_form textarea {
+.feedback_form input,
+.feedback_form textarea {
 	height: 2.8125em;
 	padding: 0.9em 1.25em;
 	border: none;
@@ -919,17 +960,13 @@ header {
 	outline: none;
 }
 
-.reviews_form input {
+.feedback_form input {
 	max-width: 15.5625em;
 	min-width: 47%;
 	font-size: 1em;
 }
 
-.form_name {
-
-}
-
-.reviews_form textarea {
+.feedback_form textarea {
 	max-width: 24.375em;
 	min-width: 74%;
 	margin-top: 0.8125em;
@@ -937,7 +974,13 @@ header {
 	resize: none;
 }
 
-.reviews_form button {
+.feedback_form textarea::-webkit-scrollbar {height: 0.33em; width: 0.33em; background-color: transparent;}
+.feedback_form textarea::-webkit-scrollbar-button {display: none;}
+.feedback_form textarea::-webkit-scrollbar-track {background-color: #f5f5f5; border-radius: 3em;}
+.feedback_form textarea::-webkit-scrollbar-thumb {background-color: #989898; border-radius: 3em;}
+.feedback_form textarea::-webkit-scrollbar-corner {background-color: transparent;}
+
+.feedback_form button {
 	max-height: 2.8125em;
 	width: 20%;
 	margin-top: 0.8125em;

@@ -13,6 +13,11 @@ $(function()
 				// autoplaySpeed: 5000,
 				arrows: false,
 				dots: true,
+				// dotsClass:'<button type="button" id="slick-slide-control00">Show all</button>'
+				// '<button type="button" id="slick-slide-control01">Show all</button>'
+				// '<button type="button" id="slick-slide-control02">Show all</button>'
+				// '<button type="button" id="slick-slide-control03">Show all</button>'
+				// '<button type="button" id="slick-slide-control04">Show all</button>',
 				swipe: true,
 				swipeToSlide: true,
 				pauseOnHover: true,
